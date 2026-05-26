@@ -1,10 +1,12 @@
 package com.example.dessertclicker
 
 import android.content.ActivityNotFoundException
+import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -61,7 +63,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             DessertClickerTheme {
-                // A surface container using the 'background' color from the theme
+
                 Surface(
                     modifier = Modifier
                         .fillMaxSize()
@@ -74,9 +76,8 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-/**
- * Determine which dessert to show.
- */
+
+
 fun determineDessertToShow(
     desserts: List<Dessert>,
     dessertsSold: Int
@@ -86,10 +87,7 @@ fun determineDessertToShow(
         if (dessertsSold >= dessert.startProductionAmount) {
             dessertToShow = dessert
         } else {
-            // The list of desserts is sorted by startProductionAmount. As you sell more desserts,
-            // you'll start producing more expensive desserts as determined by startProductionAmount
-            // We know to break as soon as we see a dessert who's "startProductionAmount" is greater
-            // than the amount sold.
+
             break
         }
     }
@@ -97,9 +95,7 @@ fun determineDessertToShow(
     return dessertToShow
 }
 
-/**
- * Share desserts sold information using ACTION_SEND intent
- */
+
 private fun shareSoldDessertsInformation(intentContext: Context, dessertsSold: Int, revenue: Int) {
     val sendIntent = Intent().apply {
         action = Intent.ACTION_SEND
