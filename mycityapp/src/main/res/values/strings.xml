@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My City</string>
+
+
+    <string name="category_cafes">Cafés</string>
+    <string name="category_bakery">Bäckereien</string>
+    <string name="category_parks">Parks</string>
+    <string name="category_nature">Natur</string>
+
+
+    <string name="rec_kaffee_glueck">Kaffee Glück</string>
+    <string name="rec_stadtpark">Stadtpark</string>
+    <string name="rec_nature">Natur</string>
+    <string name="rec_bakery">Bäckerei</string>
+
+
+    <string name="desc_kaffee_glueck">Tolles Café mit super Donuts und Ingwer-Scones. Zudem sehr hundefreundlich.</string>
+    <string name="desc_stadtpark">Großer Park mit einem schönen See und schattigen Liegewiesen.</string>
+    <string name="desc_nature">Der beste Ort für warme Sommertage</string>
+    <string name="desc_bakery">Frisches Brot und Teilchen</string>
+</resources>
