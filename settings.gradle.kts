@@ -22,7 +22,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "BSI_SoSe26_SL_Kotlin_Unit4"
+rootProject.name = "BSI_SoSe26_SL_Kotlin-Unit4"
 include(":app")
 include(":dessertclicker")
 include(":unscrambleapp")
